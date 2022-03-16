@@ -126,7 +126,8 @@ namespace Tuan4_NguyenQuocTien.Controllers
                         change.soluongton = tempsl;
                         UpdateModel(change);
                         db.SubmitChanges();
-                        
+                        return View(listGioHang);
+                        listGioHang.Clear();
                     }
                 }
             }
