@@ -120,7 +120,7 @@ namespace Tuan4_NguyenQuocTien.Controllers
                 var change = db.Saches.Where(x=>x.masach == item.masach).FirstOrDefault();
                 if(change != null)
                 {
-                    if (change.soluongton > item.iSoluong)
+                    if (change.soluongton >= item.iSoluong)
                     {
                         var tempsl = change.soluongton - item.iSoluong;
                         change.soluongton = tempsl;
