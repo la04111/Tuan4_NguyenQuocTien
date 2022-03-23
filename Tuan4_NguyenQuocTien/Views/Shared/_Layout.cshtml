@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Tuan4_NguyenQuocTien.Models
+@{
+    KhachHang kh = (KhachHang)Session["TaiKhoan"];
+
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -24,6 +29,19 @@
                     <li>@Html.ActionLink("About", "Index", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Index", "Home")</li>
                     <li>@Html.Partial("~/Views/GioHang/GioHangPartial.cshtml")</li>
+                    <li>@Html.ActionLink("Đăng ký", "DangKy", "NguoiDung")</li>
+
+                    @if (Session["TaiKhoan"] != null)
+                    {
+                        <li>@Html.ActionLink("Đăng xuất", "DangXuat", "NguoiDung")</li>
+                        <li style="color:white;text-align:center;margin-top:2%;">Xin chào bạn, @kh.hoten</li>
+                        
+
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Đăng nhập", "DangNhap", "NguoiDung")</li>
+                    }
                 </ul>
             </div>
         </div>

@@ -14,11 +14,50 @@
         <elementListCompartment Id="d169cc0e-f374-4105-94fd-dc6b0faaedc4" absoluteBounds="7.265, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(7.25 : 3.20274983723958); (5.125 : 3.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(7.25 : 3.20274983723958); (6.80208333333333 : 3.20274983723958 : JumpStart); (6.63541666666667 : 3.20274983723958 : JumpEnd); (5.125 : 3.20274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/MyDataDataContext/TheLoai/TheLoai_Sach" />
       <nodes>
         <classShapeMoniker Id="ab27eae2-c659-4f9d-b8a7-f9f62bd08c8a" />
         <classShapeMoniker Id="f550e024-cb1d-4525-bcf1-89985798b667" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c1f3333e-eca1-47e3-8ce3-f00056e5b85f" absoluteBounds="6.25, 5.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MyDataDataContext/ChiTietDonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39c83cb4-677f-43a7-942c-ab2d6621427b" absoluteBounds="6.265, 5.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4699b59-6d0a-4a83-a7f2-b7acdf379517" absoluteBounds="3.5, 5.125, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/MyDataDataContext/DonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67d1e717-c88f-4ed2-bb13-26f1e742dee5" absoluteBounds="3.515, 5.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8be6f8f-abd4-4057-a8fd-96e7e88cbb6e" absoluteBounds="0.75, 5, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/MyDataDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="883eb1a1-ef14-4ba4-925d-b2888386f692" absoluteBounds="0.765, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.125 : 2.09375); (6.71875 : 2.09375); (6.71875 : 5.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataDataContext/Sach/Sach_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="f550e024-cb1d-4525-bcf1-89985798b667" />
+        <classShapeMoniker Id="c1f3333e-eca1-47e3-8ce3-f00056e5b85f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.28929768880208); (6.25 : 6.28929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataDataContext/DonHang/DonHang_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="c4699b59-6d0a-4a83-a7f2-b7acdf379517" />
+        <classShapeMoniker Id="c1f3333e-eca1-47e3-8ce3-f00056e5b85f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.10659912109375); (3.5 : 6.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyDataDataContext/KhachHang/KhachHang_DonHang" />
+      <nodes>
+        <classShapeMoniker Id="e8be6f8f-abd4-4057-a8fd-96e7e88cbb6e" />
+        <classShapeMoniker Id="c4699b59-6d0a-4a83-a7f2-b7acdf379517" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>
